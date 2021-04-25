@@ -1,6 +1,4 @@
-import { CircleArrowRight } from '@anchor-protocol/icons';
 import { useElementIntersection } from '@terra-dev/use-element-intersection';
-import { links } from 'env';
 import { useRef } from 'react';
 import styled from 'styled-components';
 import codeImage from './assets/code.png';
@@ -32,19 +30,17 @@ function EasierIntegrationsBase({ className }: EasierIntegrationsProps) {
 
       <article>
         <h2>
-          Anchor
+          Angel
           <br />
           offers easier
           <br />
           Integrations
         </h2>
         <p>
-          Anchor’s open source Savings-as-a-Service SDK can be integrated in 10
+          Angel open source Endowments-as-a-Service SDK can be integrated in 10
           lines of code to any serviced application holding user balances.
           <br />
-          <a href={links.easierIntegration} target="_blank" rel="noreferrer">
-            Read the docs <CircleArrowRight />
-          </a>
+          <div className="highlight">Coming soon!</div>
         </p>
       </article>
     </section>
@@ -60,8 +56,6 @@ export const EasierIntegrations = styled(EasierIntegrationsBase)`
   align-items: center;
 
   padding: 151px 0;
-
-  background-color: #f8f8f8;
 
   article {
     min-width: 401px;
@@ -88,7 +82,7 @@ export const EasierIntegrations = styled(EasierIntegrationsBase)`
       white-space: break-spaces;
     }
 
-    a {
+    .highlight {
       margin-top: 16px;
 
       display: inline-block;
@@ -115,17 +109,13 @@ export const EasierIntegrations = styled(EasierIntegrationsBase)`
     max-width: 597px;
     max-height: 728px;
     border-radius: 43px;
-    box-shadow: inset 2px 3px 3px 0 rgba(0, 0, 0, 0.06),
-      inset -2px -3px 3px 0 #ffffff;
-    background-color: #f8f8f8;
-    padding: 28px;
 
     > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
       height: 100%;
-      border-radius: 30px;
-      box-shadow: inset 0 0 16px 0 rgba(0, 0, 0, 0.09);
-      background-image: linear-gradient(219deg, #585858 0%, #252525 100%);
 
       padding: 0;
 

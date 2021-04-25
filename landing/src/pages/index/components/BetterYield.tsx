@@ -20,7 +20,7 @@ const radialScale = scaleLinear()
   .domain([0, 1])
   .range([Math.PI * -0.75, Math.PI * 0.75]);
 
-const amountScale = scaleLinear().domain([0, 1]).range([0, 1000]);
+const amountScale = scaleLinear().domain([0, 1]).range([0, 20]);
 
 const pathGenerator = arc<Value>()
   .innerRadius(274)
@@ -53,15 +53,17 @@ function BetterYieldBase({ className }: BetterYieldProps) {
     >
       <article>
         <h2>
-          Anchor
+          Angel
           <br />
           offers
           <br />
-          better yield
+          better endowments
         </h2>
         <p>
-          Anchor yields stable and attractive - powered by staking returns from
-          multiple Proof of Stake blockchains.
+          Stable 20% growth year over year.
+          <br />
+          15% to your charity, 5% reinvested to grow the endowment - powered by
+          Anchor Protocol.
           <br />
           <a href={links.betterYield} target="_blank" rel="noreferrer">
             Learn more <CircleArrowRight />
@@ -112,7 +114,7 @@ const Circle = animated((props: Value) => {
       </text>
       <text opacity="0.4" fontSize="10" fill="#373737">
         <tspan x="440" y="505">
-          ANCHOR
+          ANGEL
         </tspan>
       </text>
       <text>
@@ -125,7 +127,7 @@ const Circle = animated((props: Value) => {
           letterSpacing="-4"
           fill="url(#pattern)"
         >
-          ${numeral(amountScale(props.ratio)).format('0,0')}
+          {numeral(amountScale(props.ratio)).format('0,0')}%
         </tspan>
       </text>
     </svg>

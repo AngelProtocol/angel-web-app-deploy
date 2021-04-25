@@ -12,7 +12,7 @@ function DesktopHeaderBase({ className, color }: DesktopHeaderProps) {
   return (
     <header className={className} data-dark={color === 'dark'}>
       <section>
-        <Link to="/">ANCHOR</Link>
+        <Link to="/">ANGEL</Link>
       </section>
       <nav>
         <NavLink to="/dashboard">DASHBOARD</NavLink>

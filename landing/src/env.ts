@@ -25,8 +25,8 @@ export const headerHeight = 84;
 
 export const links = {
   developers: onProduction
-    ? 'https://docs.anchorprotocol.com/developers-terra/'
-    : 'https://app.gitbook.com/@anchor-protocol/s/anchor-2/',
+    ? 'https://github.com/AngelProtocol'
+    : 'https://github.com/AngelProtocol',
   app: onProduction
     ? 'https://app.anchorprotocol.com'
     : 'https://app-staging.anchorprotocol.com',

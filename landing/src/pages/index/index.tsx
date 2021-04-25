@@ -6,7 +6,7 @@ import { Subscribe } from 'pages/index/components/Subscribe';
 import { useEffect, useMemo, useRef } from 'react';
 import SmoothScroll from 'smooth-scroll';
 import styled from 'styled-components';
-import { BetterSavings } from './components/BetterSavings';
+// import { BetterSavings } from './components/BetterSavings';
 import { BetterYield } from './components/BetterYield';
 import { EasierIntegrations } from './components/EasierIntegrations';
 
@@ -72,7 +72,6 @@ function IndexBase({ className }: IndexProps) {
 
   return (
     <div className={className}>
-      <BetterSavings disable3D={process.env.NODE_ENV === 'development'} />
       <ResponsiveContainer ref={scrollTarget}>
         <BetterYield />
         <EasierIntegrations />

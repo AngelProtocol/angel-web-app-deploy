@@ -26,9 +26,9 @@ function FrictionlessAcessBase({ className }: FrictionlessAcessProps) {
       data-intersection={elementIntersection?.isIntersecting}
     >
       <article>
-        <h2>Anchor offers frictionless access</h2>
+        <h2>Angel offers frictionless access</h2>
         <p>
-          Anchor savings has no minimum deposits, account freezes, or signup
+          Angel endowments have no minimum deposits, account freezes, or signup
           requirements - it can be used by anyone in the world with access to
           the internet.
           <br />
