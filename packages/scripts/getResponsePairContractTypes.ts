@@ -2,7 +2,9 @@ import path from 'path';
 import ts from 'typescript';
 import { src } from './env';
 
-export async function getResponsePairContractTypes(targetFiles: string[]): Promise<string[]> {
+export async function getResponsePairContractTypes(
+  targetFiles: string[],
+): Promise<string[]> {
   const rootDir = path.resolve(src, '..');
 
   const compilerOptions: ts.CompilerOptions = {
@@ -15,7 +17,9 @@ export async function getResponsePairContractTypes(targetFiles: string[]): Promi
     rootDir,
     ['.ts'],
     [],
-    targetFiles.map((file) => `src/@anchor-protocol/types/contracts/${file}.ts`),
+    targetFiles.map(
+      (file) => `src/@anchor-protocol/types/contracts/${file}.ts`,
+    ),
   );
 
   const program: ts.Program = ts.createProgram(files, compilerOptions, host);

@@ -71,9 +71,9 @@ function OverviewBase({ className }: OverviewProps) {
     let defaultTooltip = 'LP rewards APR';
 
     if (apyLPRewards && apyLPRewards.length > 0) {
-      const apr = big(big(apyLPRewards[0].APY).div(365).plus(1)).pow(
-        365,
-      ).minus(1) as Rate<Big>;
+      const apr = big(big(apyLPRewards[0].APY).div(365).plus(1))
+        .pow(365)
+        .minus(1) as Rate<Big>;
 
       return `${formatRate(apr).toString()}% (if compounded daily)`;
     }

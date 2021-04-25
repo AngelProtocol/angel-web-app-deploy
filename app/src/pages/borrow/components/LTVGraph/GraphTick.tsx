@@ -7,10 +7,10 @@ export const GraphTick = styled.span`
 
   top: -28px;
   transform: translateX(-50%);
-  
+
   word-break: keep-all;
   white-space: nowrap;
-  
+
   user-select: none;
 
   &::before {

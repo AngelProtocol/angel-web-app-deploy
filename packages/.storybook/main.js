@@ -26,7 +26,9 @@ module.exports = {
     {
       name: '@storybook/preset-create-react-app',
       options: {
-        scriptsPackageName: path.dirname(require.resolve('react-scripts/package.json')),
+        scriptsPackageName: path.dirname(
+          require.resolve('react-scripts/package.json'),
+        ),
       },
     },
   ],

@@ -8,12 +8,12 @@ module.exports = {
       ...getWebpackAlias(path.resolve(__dirname, '../packages')),
       ...getWebpackAlias(__dirname),
     })(config);
-    
+
     return config;
   },
   jest: (config) => {
     config.modulePaths.push('<rootDir>/src/', '<rootDir>/../packages/src/');
-    
+
     return config;
   },
 };
